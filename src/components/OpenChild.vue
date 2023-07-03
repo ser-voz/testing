@@ -10,7 +10,7 @@ export default {
         }
     },
     mounted() {
-        this.concatString();
+        this.$emit('concat', this.$props.msg + ' child option');
     }
 }
 </script>

@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import {RouterLink, RouterView} from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import {ref} from "vue";
+
+const title = ref<string>('My title')
+const titleElement = ref();
+
+function validate(event : Event) {
+    (event.target as HTMLInputElement).blur()
+    title.value = titleElement.value.innerText.trim()
+}
+defineExpose({ titleElement })
 </script>
 
 <template>
@@ -15,8 +25,13 @@ import HelloWorld from './components/HelloWorld.vue'
         </div>
     </header>
     <HelloWorld msg="You did it!"/>
-
     <RouterView/>
+
+    <template>
+        <div ref="titleElement" contenteditable spellcheck="false" @blur="validate">
+            {{ title }}
+        </div>
+    </template>
 </template>
 
 <style scoped>
