@@ -22,6 +22,7 @@ defineExpose({ titleElement })
                 <RouterLink to="/about">Setup</RouterLink>
                 <RouterLink to="/service">Script setup</RouterLink>
             </nav>
+            <h3>subtitle</h3>
         </div>
     </header>
     <HelloWorld msg="You did it!"/>
