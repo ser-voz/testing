@@ -17,6 +17,7 @@ defineExpose({ titleElement })
     <header>
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125"/>
         <div class="wrapper">
+            <h1>I am title</h1>
             <nav>
                 <RouterLink to="/">Option</RouterLink>
                 <RouterLink to="/about">Setup</RouterLink>
