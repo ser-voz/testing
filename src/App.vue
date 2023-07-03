@@ -15,6 +15,7 @@ defineExpose({ titleElement })
 
 <template>
     <header>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad dignissimos doloremque, maxime quis reprehenderit sequi tempore tenetur! Delectus, optio?</h5>
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125"/>
         <div class="wrapper">
             <h1>I am title</h1>
